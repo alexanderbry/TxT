@@ -1,0 +1,17 @@
+[
+  { "id": 1, "username": "john_doe", "email": "john.doe@example.com", "password": "hashedpassword123", "role": "user" },
+  { "id": 2, "username": "jane_smith", "email": "jane.smith@example.com", "password": "hashedpassword456", "role": "admin" },
+  { "id": 3, "username": "alice_jones", "email": "alice.jones@example.com", "password": "hashedpassword789", "role": "user" },
+  { "id": 4, "username": "bob_brown", "email": "bob.brown@example.com", "password": "hashedpassword012", "role": "moderator" },
+  { "id": 5, "username": "carol_white", "email": "carol.white@example.com", "password": "hashedpassword345", "role": "user" },
+  { "id": 6, "username": "dave_black", "email": "dave.black@example.com", "password": "hashedpassword678", "role": "admin" },
+  { "id": 7, "username": "eve_green", "email": "eve.green@example.com", "password": "hashedpassword901", "role": "user" },
+  { "id": 8, "username": "frank_young", "email": "frank.young@example.com", "password": "hashedpassword234", "role": "user" },
+  { "id": 9, "username": "grace_davis", "email": "grace.davis@example.com", "password": "hashedpassword567", "role": "moderator" },
+  { "id": 10, "username": "hank_martin", "email": "hank.martin@example.com", "password": "hashedpassword890", "role": "user" },
+  { "id": 11, "username": "ian_lewis", "email": "ian.lewis@example.com", "password": "hashedpassword1234", "role": "admin" },
+  { "id": 12, "username": "julia_king", "email": "julia.king@example.com", "password": "hashedpassword5678", "role": "user" },
+  { "id": 13, "username": "kyle_wood", "email": "kyle.wood@example.com", "password": "hashedpassword9101", "role": "user" },
+  { "id": 14, "username": "lisa_clark", "email": "lisa.clark@example.com", "password": "hashedpassword1121", "role": "moderator" },
+  { "id": 15, "username": "mike_anderson", "email": "mike.anderson@example.com", "password": "hashedpassword3141", "role": "user" }
+]

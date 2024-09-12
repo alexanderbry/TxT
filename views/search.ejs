@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+    <!-- Navbar -->
+    <%- include("_navbar") %>
+
+    <!-- Main Content (Profile Section) -->
+     <% profiles.forEach(el => { %>
+        <div class="flex justify-center items-center flex-col sm:ml-64 sm:mr-64 pt-24 pb-8 min-h-screen dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+            <div class="bg-gray-800 rounded-lg shadow p-8 w-full max-w-4xl text-center">
+            <!-- Profile Info -->
+            <div class="flex flex-col items-center">
+                <img class="w-32 h-32 rounded-full mb-4"
+                src="<%= el.imgUrl %>" alt="Profile Picture">
+                <h1 class="text-3xl font-semibold text-white"><%= el.name %></h1>
+                <p class="text-white">Username : <%= el.username %></p>
+                <p class="text-white">Member <%= el.since %></p>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<!-- Navbar -->
+ <%- include("_navbar") %>
+  <!-- Left Sidebar -->
+  <aside id="logo-sidebar"
+    class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+    aria-label="Sidebar">
+    <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+      <ul class="space-y-2 font-medium">
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <span class="ms-3">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16Z" />
+              <path fill-rule="evenodd"
+                d="M21.707 21.707a1 1 0 0 1-1.414 0l-3.5-3.5a1 1 0 0 1 1.414-1.414l3.5 3.5a1 1 0 0 1 0 1.414Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <span class="flex-1 ms-3 whitespace-nowrap">Explore</span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17 6h-2V5h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2h-.541A5.965 5.965 0 0 1 14 10v4a1 1 0 1 1-2 0v-4c0-2.206-1.794-4-4-4-.075 0-.148.012-.22.028C7.686 6.022 7.596 6 7.5 6A4.505 4.505 0 0 0 3 10.5V16a1 1 0 0 0 1 1h7v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-3h5a1 1 0 0 0 1-1v-6c0-2.206-1.794-4-4-4Zm-9 8.5H7a1 1 0 1 1 0-2h1a1 1 0 1 1 0 2Z" />
+            </svg>
+
+            <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
+            <span
+              class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+          </a>
+        </li>
+        <li>
+          <a href="/logout"
+            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <svg class="w-6 h-6 text-red-400 dark:red-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M20.337 3.664c.213.212.354.486.404.782.294 1.711.657 5.195-.906 6.76-1.77 1.768-8.485 5.517-10.611 6.683a.987.987 0 0 1-1.176-.173l-.882-.88-.877-.884a.988.988 0 0 1-.173-1.177c1.165-2.126 4.913-8.841 6.682-10.611 1.562-1.563 5.046-1.198 6.757-.904.296.05.57.191.782.404ZM5.407 7.576l4-.341-2.69 4.48-2.857-.334a.996.996 0 0 1-.565-1.694l2.112-2.111Zm11.357 7.02-.34 4-2.111 2.113a.996.996 0 0 1-1.69-.565l-.422-2.807 4.563-2.74Zm.84-6.21a1.99 1.99 0 1 1-3.98 0 1.99 1.99 0 0 1 3.98 0Z"
+                clip-rule="evenodd" />
+            </svg>
+
+            <span class="flex-1 ms-3 whitespace-nowrap text-red-400">Log out from TxT⤶</span>
+          </a>
+        </li>
+        <li>
+
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- Main Content (Grid Section) -->
+  <div class="flex">
+    <div class="flex-grow sm:ml-64 sm:mr-64 dark:bg-gray-800">
+
+      <!-- USER POST -->
+      <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
+          <div style="width: max-width; display: flex; justify-content: center;" class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 inline-block">
+
+           <div style="width: 50vw;">
+            <!-- User -->
+            <div class="flex items-center gap-4">
+              <img class="w-10 h-10 rounded-full" src="<%= user.Profile.imgUrl %>" alt="">
+              <a href="/profile/<%= user.Profile.id %>">
+                <div class="font-medium dark:text-white">
+                    <div><%= user.Profile.name %></div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">Joined since : <%= user.Profile.since %></div>
+                  </div>
+                </a>
+                </div>
+              <br>
+              <!-- Post -->
+              <form method="post" action="/post/<%= user.Profile.id %>" enctype="multipart/form-data">
+                <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What's on your mind?</label>
+                <textarea name="text" id="text" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type here..."></textarea>
+                <br>
+                <div style="display: flex; justify-content: center;">
+                  <input class="ml-57 w-20" name="postImg" type="file" name="postImg" id="postImg"/>
+                </div>
+                <br>
+                <div style="display: flex; justify-content: center;" class="relative mb-4 flex w-full flex-wrap items-stretch">
+                    <% let arr = ["Technology", "Sport", "Gaming", "Fashion"] %>
+                    <% arr.forEach(el => { %>
+                        <input type="radio" id="hashtag_<%= el %>" name="name" value="<%= el %>" class="hidden peer" required />
+                        <label for="hashtag_<%= el %>" class="inline-flex items-center justify-between mx-3 p-5 text-red-500 bg-white border border-red-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-pink-500 peer-checked:border-pink-600 peer-checked:text-pink-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="block">
+                                <div class="w-full text-lg font-semibold"><%= el %></div>
+                            </div>
+                        </label>
+                    <% }) %>
+                </div>
+                <div class="w-full" style="display: flex; justify-content: center;">
+                    <button type="submit" class="w-40 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Post</button>
+                </div>
+            </form>
+            
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ELSE POST -->
+      <% posts.forEach(el => { %>
+            <div style="width: max-width; display: flex; justify-content: center;" class="mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 inline-block">
+  
+             <div style="width: 50vw;">
+              <!-- User -->
+              <div class="flex items-center gap-4">
+                <img class="w-10 h-10 rounded-full" src="<% el.User.Profile.imgUrl %>" alt="">
+                <a href="/profile/<%= el.User.Profile.id %>">
+                <div class="font-medium dark:text-white">
+                    <div><%= el.User.Profile.name %></div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">Role : <%= el.User.getRole(el.User) %></div>
+                </div>
+                </a>
+              </div>
+              <br>
+              <!-- Post -->  
+              <img class="h-1vh max-w-xl rounded-lg shadow-xl dark:shadow-gray-800" src="<%= el.postImg %>" alt="Sorry the image is broken.">
+              <br>
+  
+              <p class="mb-3 text-gray-500 dark:text-gray-400"><%= el.text %></p>
+              <!-- Button -->
+               <div style="display: flex; align-items: center;" class="max-width">
+                <a href="/home/<%= el.id %>?like=<%= el.like %>" class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-800 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                    <path d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 0 0 0-3.331-1.06A24.859 24.859 0 0 1 6 6.8v9.586h.114C8.223 16.969 11.015 18 13.6 18c1.4 0 1.592-.526 1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z"/>
+                  </svg>
+                  ‎ ‎ Like (<%= el.like %>)
+                </a>
+
+                <a href="/home/<%= el.id %>?dislike=<%= el.dislike %>" class="bg-red-100 hover:bg-red-200 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-800 dark:text-red-400 border border-red-400 inline-flex items-center justify-center">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                    <path d="M3 11H1a1 1 0 0 1-1-1V2a2 2 0 0 1 4 0v8a1 1 0 0 1-1 1Zm12.954-4H12l1.558 4.5a1.778 1.778 0 0 1-3.331 1.06A24.859 24.859 0 0 0 6 11.2V1.614h.114C8.223 0.031 11.015-1 13.6-1c1.4 0 1.592.526 1.88 1.317l2.354 7a2 2 0 0 1-1.88 2.683Z"/>
+                  </svg>
+                  ‎ ‎ Dislike (<%= el.dislike %>)
+                </a>
+
+                <% if (el.UserId == user.id) { %>
+                  <a href="/post/<%= el.id %>/delete" class="bg-red-100 hover:bg-red-200 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-red-800 dark:text-white border border-red inline-flex items-center justify-center">
+                    ‎ ‎ Delete
+                  </a>
+                <% } %>
+      
+               </div>
+
+            </div>
+          </div>
+      <% }) %>
+
+    </div>
+  </div>
+
+  <!-- Right Sidebar -->
+  <aside id="right-sidebar"
+    class="fixed top-0 right-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+    aria-label="Sidebar">
+    <div class="h-full px-3 pb-4 overflow-y-auto">
+      <ul class="space-y-2 font-medium">
+
+        <!-- Search -->
+        <form class="max-w-md mx-auto" role="search" method="get" action="/search">
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input name="name" type="search" id="search"
+              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search" required />
+            <button type="submit"
+              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+          </div>
+        </form>
+
+        <!-- Fitur Profile Sidebar -->
+        <div
+          class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex items-center justify-between mb-4">
+            <p class="text-xl font-bold leading-none text-gray-900 dark:text-white">People You Might Know</p>
+          </div>
+          <div class="flow-root">
+            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+
+              <% posts.slice(0,3).forEach(el => { %>
+                <li class="py-3 sm:py-4">
+                  <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img class="w-8 h-8 rounded-full" src="<%= el.User.Profile.imgUrl %>"
+                    alt="Neil image">
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <%= el.User.Profile.name %>
+                    </p>
+                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                      <%= el.User.username %>
+                      </p>
+                    </div>
+                  </div>
+              <% }) %>
+
+            </ul>
+          </div>
+        </div>
+        <!-- Fitur Hashtag Sidebar -->
+        <div
+          class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex items-center justify-between mb-4">
+            <p class="text-xl font-bold leading-none text-gray-900 dark:text-white">Trending Now</p>
+          </div>
+          <div class="flow-root">
+            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+
+              <% posts.slice(0,2).forEach(el => { %>
+                <li class="py-3 sm:py-4">
+                  <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img class="w-8 h-8 rounded-full" src="<%= el.User.Profile.imgUrl %>"
+                    alt="Neil image">
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      <%= el.User.Profile.name %>
+                    </p>
+                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                      <%= el.User.username %>
+                      </p>
+                    </div>
+                  </div>
+              <% }) %>
+
+            </ul>
+          </div>
+        </div>
+
+      </ul>
+    </div>
+  </aside>
+
+</body>
+</html>
