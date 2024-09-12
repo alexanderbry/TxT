@@ -92,7 +92,7 @@ class Controller {
         try {
             let sessionUserId = req.session.userId
             let sessionUserRole = req.session.userRole
-            let { name } = req.query
+            let {deleted} = req.query
 
             let user = await User.findByPk(sessionUserId, {
                 include : [Profile]
@@ -109,7 +109,7 @@ class Controller {
                 order : [["createdAt", "DESC"]]
             })
 
-            res.render("home", {user, posts})
+            res.render("home", {user, posts, deleted})
         } catch (error) {
             res.send(error.message)
         }
@@ -144,8 +144,14 @@ class Controller {
             let { text, name } = req.body
             let { id } = req.params
             let path = req.file;
-            let postImg = path.path
             let UserId = id
+            let postImg = "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1"
+            console.log(req.file)
+            if(req.file){
+                postImg = path.path
+            }
+ 
+
 
             await Post.create({text, postImg, UserId})
             await Hashtag.create({name})
@@ -160,14 +166,17 @@ class Controller {
     static async delete(req, res){
         try {
             let { id } = req.params
-
-            console.log(id);
             
+            let data = await Post.findByPk(id, {
+                include : User
+            })
+
             await Post.destroy({
                 where : {id}
             })
-
-            res.redirect("/")
+            
+            let deleted = data.User.name
+            res.redirect(`/home?deleted=${deleted}`)
         } catch (error) {
             res.send(error.message)
         }
@@ -219,7 +228,7 @@ class Controller {
                 if(err){
                     throw new Error("Error while logging out")
                 } else {
-                    res.redirect("/login")
+                    res.redirect("/")
                 }
             })
         } catch (error) {

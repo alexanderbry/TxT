@@ -81,13 +81,15 @@
   <!-- Main Content (Grid Section) -->
   <div class="flex">
     <div class="flex-grow sm:ml-64 sm:mr-64 dark:bg-gray-800">
-
       <!-- USER POST -->
       <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
-          <div style="width: max-width; display: flex; justify-content: center;" class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 inline-block">
-
-           <div style="width: 50vw;">
+        <div style="width: max-width; display: flex; justify-content: center;" class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 inline-block">
+          
+          <div style="width: 50vw;">
             <!-- User -->
+            <% if (deleted) { %>
+              <p class="text-red-500">One of <%= deleted %> post, has been deleted</p>
+            <% } %>
             <div class="flex items-center gap-4">
               <img class="w-10 h-10 rounded-full" src="<%= user.Profile.imgUrl %>" alt="">
               <a href="/profile/<%= user.Profile.id %>">
