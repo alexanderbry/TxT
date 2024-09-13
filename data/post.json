@@ -1,18 +1,18 @@
 [
-    { "text": "Excited about the new project!", "postImg": "https://via.placeholder.com/800x600.png?text=Post+1", "like": 23, "dislike": 2, "UserId": 1 },
-    { "text": "Had a great day at the conference.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+2", "like": 45, "dislike": 1, "UserId": 2 },
-    { "text": "Just finished reading a fantastic book.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+3", "like": 32, "dislike": 5, "UserId": 3 },
-    { "text": "The weather is amazing today!", "postImg": "https://via.placeholder.com/800x600.png?text=Post+4", "like": 28, "dislike": 3, "UserId": 4 },
-    { "text": "Looking forward to the weekend getaway.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+5", "like": 50, "dislike": 0, "UserId": 5 },
-    { "text": "Just finished a workout. Feeling great!", "postImg": "https://via.placeholder.com/800x600.png?text=Post+6", "like": 60, "dislike": 2, "UserId": 6 },
-    { "text": "Cooking a new recipe tonight. Wish me luck!", "postImg": "https://via.placeholder.com/800x600.png?text=Post+7", "like": 15, "dislike": 1, "UserId": 7 },
-    { "text": "Can't wait for the concert next week!", "postImg": "https://via.placeholder.com/800x600.png?text=Post+8", "like": 37, "dislike": 4, "UserId": 8 },
-    { "text": "Finally completed the DIY project at home.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+9", "like": 21, "dislike": 3, "UserId": 9 },
-    { "text": "Great time at the new restaurant.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+10", "like": 48, "dislike": 2, "UserId": 10 },
-    { "text": "Exploring new hiking trails this weekend.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+11", "like": 33, "dislike": 1, "UserId": 11 },
-    { "text": "Enjoying a relaxing day at the spa.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+12", "like": 41, "dislike": 0, "UserId": 12 },
-    { "text": "Just started a new hobby: painting.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+13", "like": 19, "dislike": 3, "UserId": 13 },
-    { "text": "Celebrating a friend's birthday tonight.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+14", "like": 27, "dislike": 2, "UserId": 14 },
-    { "text": "Reading a fascinating article on tech trends.", "postImg": "https://via.placeholder.com/800x600.png?text=Post+15", "like": 30, "dislike": 4, "UserId": 15 }
+    { "text": "Excited about the new project!", "postImg": "https://picsum.photos/200/300?grayscale", "like": 23, "dislike": 2, "UserId": 1 },
+    { "text": "Had a great day at the conference.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 45, "dislike": 1, "UserId": 2 },
+    { "text": "Just finished reading a fantastic book.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 32, "dislike": 5, "UserId": 3 },
+    { "text": "The weather is amazing today!", "postImg": "https://picsum.photos/200/300?grayscale", "like": 28, "dislike": 3, "UserId": 4 },
+    { "text": "Looking forward to the weekend getaway.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 50, "dislike": 0, "UserId": 5 },
+    { "text": "Just finished a workout. Feeling great!", "postImg": "https://picsum.photos/200/300?grayscale", "like": 60, "dislike": 2, "UserId": 6 },
+    { "text": "Cooking a new recipe tonight. Wish me luck!", "postImg": "https://picsum.photos/200/300?grayscale", "like": 15, "dislike": 1, "UserId": 7 },
+    { "text": "Can't wait for the concert next week!", "postImg": "https://picsum.photos/200/300?grayscale", "like": 37, "dislike": 4, "UserId": 8 },
+    { "text": "Finally completed the DIY project at home.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 21, "dislike": 3, "UserId": 9 },
+    { "text": "Great time at the new restaurant.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 48, "dislike": 2, "UserId": 10 },
+    { "text": "Exploring new hiking trails this weekend.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 33, "dislike": 1, "UserId": 11 },
+    { "text": "Enjoying a relaxing day at the spa.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 41, "dislike": 0, "UserId": 12 },
+    { "text": "Just started a new hobby: painting.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 19, "dislike": 3, "UserId": 13 },
+    { "text": "Celebrating a friend's birthday tonight.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 27, "dislike": 2, "UserId": 14 },
+    { "text": "Reading a fascinating article on tech trends.", "postImg": "https://picsum.photos/200/300?grayscale", "like": 30, "dislike": 4, "UserId": 15 }
   ]
   

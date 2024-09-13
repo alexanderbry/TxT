@@ -56,7 +56,8 @@ module.exports = (sequelize, DataTypes) => {
         },
         notEmpty : {
           msg : "Date of Birth can't be empty"
-        }
+        },
+        isDate: true
       }
     },
     gender: {

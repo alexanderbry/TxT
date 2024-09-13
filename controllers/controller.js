@@ -48,7 +48,9 @@ class Controller {
             let { id } = req.params
             let UserId = id
             let { name, dateOfBirth, gender, imgUrl } = req.body
-            
+            if(!imgUrl){
+                imgUrl = "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1"
+            }
             await Profile.create({name, dateOfBirth, gender, imgUrl, UserId})
             
             res.redirect("/login")
@@ -145,8 +147,8 @@ class Controller {
             let { id } = req.params
             let path = req.file;
             let UserId = id
-            let postImg = "https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?ssl=1"
-            console.log(req.file)
+            let postImg = "https://picsum.photos/200/300?grayscale"
+
             if(req.file){
                 postImg = path.path
             }
@@ -168,14 +170,17 @@ class Controller {
             let { id } = req.params
             
             let data = await Post.findByPk(id, {
-                include : User
+                include : {
+                    model : User,
+                    include : Profile
+                }
             })
 
             await Post.destroy({
                 where : {id}
             })
             
-            let deleted = data.User.name
+            let deleted = data.User.Profile.name
             res.redirect(`/home?deleted=${deleted}`)
         } catch (error) {
             res.send(error.message)
